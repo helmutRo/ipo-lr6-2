@@ -8,8 +8,8 @@ import random
 numbers = [-3, -5, -2, -12, 0, 15, 4, 7, 2] #значения для заполнения матрицы 
 x = 0 #счётчик кратных 3 
 a = list() #строка матрицы
-b = int(random.random() * 5 + 4) #колво столбиков в матрице
-c = int(random.random() * 5 + 4) #колво строк в матрице
+b = random.randint(4, 8) #колво столбиков в матрице
+c = random.randint(4, 8) #колво строк в матрице
 for i in range(b): 
     a = [random.choice(numbers) for i in range(c)] #строки заполняются рандомными числами из numbers
     print(*a) #вывод строки
